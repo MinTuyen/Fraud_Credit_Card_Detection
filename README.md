@@ -42,6 +42,22 @@ The final decision rule determines whether a transaction should be flagged for r
 
 The framework also supports a **top-K review policy**, where only the most economically important transactions are selected when review capacity is limited.
 
+### Dataset overview
+
+This dataset contains real credit card transactions made by European cardholders in September 2013. It covers two days of transactions, with 284,807 total records, of which 492 are fraudulent. That means the fraud rate is only about 0.172%, so the dataset is extremely imbalanced.
+
+Features:
+
+The dataset has 31 columns in total:
+
+Time: seconds elapsed between each transaction and the first transaction in the dataset
+
+V1 to V28: anonymized features obtained using PCA for confidentiality
+
+Amount: transaction amount
+
+Class: target label, where 1 = fraud and 0 = legitimate
+
 ## Methodology
 
 ### 1. Data Preprocessing
